@@ -1,0 +1,16 @@
+{
+  "name": "secure_elite",
+  "version": "1.0.0",
+  "description": "A specimen corporate website and app for web testing demo",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Team One",
+  "license": "ISC"
+}
