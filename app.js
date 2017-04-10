@@ -14,6 +14,8 @@ app.get('/', routes.home);
 
 app.get('/about', routes.about);
 
+app.get('/products', routes.products);
+
 //app.get('/about', routes.about);
 //app.get('/demo', routes.demo);
 

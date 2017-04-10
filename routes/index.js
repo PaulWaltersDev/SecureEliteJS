@@ -5,3 +5,7 @@ exports.home = function(req, res){
 exports.about = function(req, res){
     res.render('about');
 };
+
+exports.products = function(req, res){
+    res.render('products');
+};
