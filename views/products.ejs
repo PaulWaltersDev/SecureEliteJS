@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/head.ejs %>
+</head>
+<body>
+    <% include partials/navbar.ejs %>
+    <% include partials/sidebar.ejs %>
+
+    <!-- Work Section -->
+    <div class="w3-container" style="padding:128px 16px" id="work">
+        <h3 class="w3-center">OUR PRODUCTS</h3>
+        <p class="w3-center w3-large">Our Range of Security Solutions </p>
+
+    <div class="w3-row-padding" style="margin-top:64px; margin-left:20pc">
+        <div class="w3-col l3 m6">
+            <a href="ProtectFX">
+            <img src="/images/Protect_FX.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="ProtectFX">
+            </a>
+            <p>The <b>Definitive Online Solution</b> in Corporate Intrusion Vulnerability detection systems.</p>
+            <p>Find the holes in your online presence before your attackers do.</p>
+            <p>Protect your Digital Assets and Reputation from external threats.</p>
+            <p>Get Timely and Accurate Security Reports and make C-Suite level decisions easily and fast!.</p>
+            <p>Click <a href="ProtectFX">HERE</a> for your free demo and presentation.</p>
+        </div>
+        <div class="w3-col l3 m6">
+            <img src="/images/SecureRiskPro.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="SecureRiskPro">
+            <p>The world-leading customisable corporate Security Threat and Risk Management Profiling solution,</p>
+            <p>Accurately and quickly assess your security risk profile throughout your organisation.</p>
+            <p>Onsite installation and full customisation for your needs.</p>
+            <p>The only security risk profiling tool the diligent CIO will ever need!</p>
+            <p>Click <a href="Contact">HERE</a> to contact us for more information.</p>        
+        </div>
+  </div> 
+
+    <% include partials/scripts.ejs %>
+    <% include partials/footer.ejs %>
+</body>
+</html>
