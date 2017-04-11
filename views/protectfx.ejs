@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/head.ejs %>
+</head>
+<body>
+    <% include partials/navbar.ejs %>
+    <% include partials/sidebar.ejs %>
+
+    <style>
+        .bckgrnd
+        {
+            position: relative;
+            z-index: 0;
+        }
+
+        .bckgrnd::before
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;           
+            content: "";
+            background-image: url('/images/barbwire.jpg');
+            opacity: 0.3;
+            z-index: -1;
+        }
+    </style>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6 bckgrnd" style="font-size: 1.1em;">
+        <img src="/images/Protect_FX.JPG" style="width:40%" onclick="onClick(this)" alt="ProtectFX">
+        <ul>
+        <li>The <b>Definitive Online Solution</b> in Corporate Intrusion Vulnerability detection systems.</li>
+        <br />
+        <li>Finds and Maps Vulnerable Points in Your Network and Web Presence</li>
+        <br />
+        <li>Audits your network security so you can secure your valuable IP and digital assets</li>
+        <br />
+        <li>Profiles Your Network and Web Infrastructure and Recommends Immediate, Easily Workable Solutions</li>
+        <br />
+        <li>Produces Easy-to-Understand Reports for security and audit managers, CIO and beyond</li>
+        <br />
+        <li><b>24-7 Support<b> from our excellent team of security experts</li>
+        </ul>
+    </div>
+    <div class="w3-col m6">
+      <h2 style="padding-left: 10px">Submit your details here to access your One Month FREE Online Demo</h2>
+      <form action="demo_register" style="padding-left: 10px" method="POST">
+      First Name: <input type="text" name="first_name" required /><br />
+      Middle Name: <input type="text" name="middle_name" /><br />
+      Surname: <input type="text" name="surname" required /><br />
+      <br />
+      Company Name (N/A if for Personal use): <input type="text" name="surname" required /><br />
+      No. of Employees: <input list="no_employees"><br />
+      <datalist id="no_employees">
+        <option value="0-20">
+        <option value="20-200">
+        <option value="200-1000">
+        <option value="1000-5000">
+        <option value="5000+">
+     </datalist>
+     <br />
+     Address Line 1: <input type="text" name="address_line1" required /><br />
+     Address Line 1: <input type="text" name="address_line2" /><br />
+     Town or City: <input type="text" name="town" required /><br />
+     State or County: <input type="text" name="state" required /><br />
+     Country: <input type="text" name="country" required /><br />
+     Telephone Number: <input type="tel" name="state" required /><br />
+     Email: <input type="email" name="email" required /><br />
+     <br />
+     <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </div>
+</div>
+
+    <% include partials/scripts.ejs %>
+    <% include partials/footer.ejs %>
+</body>
+</html>
